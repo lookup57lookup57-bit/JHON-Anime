@@ -6,7 +6,7 @@ import logging
 logger = logging.getLogger(__name__)
 
 # Get MongoDB URL from environment variable or use default
-MONGO_DB_URL = os.getenv('MONGO_DB_URL', 'mongodb://localhost:27017/')
+MONGO_DB_URL = os.getenv('MONGO_DB_URL', 'mongodb+srv://Tyrant:Tyrant1234@cluster0.ewhgfcn.mongodb.net/?appName=Cluster0)
 
 try:
     client = MongoClient(MONGO_DB_URL, serverSelectionTimeoutMS=5000)
